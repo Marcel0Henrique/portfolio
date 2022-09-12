@@ -7,5 +7,5 @@ class PortfolioColors {
   static Color purpleFive = const Color(0xff0b0434);
   static Color purpleSix = const Color(0xff0d053a);
 
-  static Color red = const Color(0xfffb3640);
+  static Color red = const Color(0xfffe3e57);
 }

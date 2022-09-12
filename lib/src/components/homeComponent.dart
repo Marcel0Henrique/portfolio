@@ -10,6 +10,9 @@ class HomeComponent extends StatelessWidget {
       height: MediaQuery.of(context).size.height,
       width: MediaQuery.of(context).size.width,
       color: PortfolioColors.purple,
+      child: Padding(
+        padding: EdgeInsets.symmetric(horizontal: 20),
+      ),
     );
   }
 }

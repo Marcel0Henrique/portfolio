@@ -6,6 +6,7 @@ class PortfolioColors {
   static Color purpleFour = const Color(0xff070323);
   static Color purpleFive = const Color(0xff0b0434);
   static Color purpleSix = const Color(0xff0d053a);
+  static Color purpleSeven = const Color.fromARGB(255, 15, 0, 99);
 
   static Color red = const Color(0xfffe3e57);
   static List<Color> gradient = [
@@ -21,5 +22,15 @@ class PortfolioColors {
   static List<Color> buttomHoverGradient = [
     Color.fromARGB(255, 254, 43, 71),
     Color.fromARGB(255, 251, 3, 36),
+  ];
+
+  static List<Color> buttomAlternativeGradient = [
+    const Color(0xff170d52),
+    const Color(0xff0b0434),
+  ];
+
+  static List<Color> buttomAlternativeHoverGradient = [
+    Color.fromARGB(255, 38, 21, 134),
+    Color.fromARGB(255, 20, 7, 98),
   ];
 }

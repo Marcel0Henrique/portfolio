@@ -5,6 +5,7 @@ import 'package:lottie/lottie.dart';
 import 'package:portfolio/src/controllers/homeController.dart';
 import 'package:portfolio/src/styles/portfolioColors.dart';
 import 'package:portfolio/src/widgets/customButton.dart';
+import 'package:portfolio/src/widgets/customButtonAlternative.dart';
 
 class HomeComponent extends StatelessWidget {
   const HomeComponent({Key? key}) : super(key: key);
@@ -111,6 +112,11 @@ class HomeComponent extends StatelessWidget {
                         text: "Sobre mim",
                         onPressed: () {},
                       ),
+                      const SizedBox(width: 30),
+                      CustomButtomAlternative(
+                        text: "Fale comigo",
+                        onPressed: () {},
+                      )
                     ],
                   ),
                 )

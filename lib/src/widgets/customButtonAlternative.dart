@@ -3,20 +3,21 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:hovering/hovering.dart';
 import 'package:portfolio/src/styles/portfolioColors.dart';
 
-class CustomButtom extends StatefulWidget {
+class CustomButtomAlternative extends StatefulWidget {
   final String text;
   final VoidCallback onPressed;
-  CustomButtom({
+  CustomButtomAlternative({
     Key? key,
     required this.text,
     required this.onPressed,
   }) : super(key: key);
 
   @override
-  State<CustomButtom> createState() => _CustomButtomState();
+  State<CustomButtomAlternative> createState() =>
+      _CustomButtomAlternativeState();
 }
 
-class _CustomButtomState extends State<CustomButtom> {
+class _CustomButtomAlternativeState extends State<CustomButtomAlternative> {
   @override
   Widget build(BuildContext context) {
     return HoverWidget(
@@ -26,7 +27,7 @@ class _CustomButtomState extends State<CustomButtom> {
         child: Material(
           color: Colors.transparent,
           elevation: 15,
-          shadowColor: PortfolioColors.red,
+          shadowColor: PortfolioColors.purpleSeven,
           child: Container(
             height: 45,
             width: 130,
@@ -35,7 +36,7 @@ class _CustomButtomState extends State<CustomButtom> {
                 gradient: LinearGradient(
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
-                  colors: PortfolioColors.buttomHoverGradient,
+                  colors: PortfolioColors.buttomAlternativeHoverGradient,
                 )),
             child: Align(
               alignment: Alignment.center,
@@ -69,7 +70,7 @@ class _CustomButtomState extends State<CustomButtom> {
                 gradient: LinearGradient(
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
-                  colors: PortfolioColors.buttomGradient,
+                  colors: PortfolioColors.buttomAlternativeGradient,
                 )),
             child: Align(
               alignment: Alignment.center,

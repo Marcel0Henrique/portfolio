@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:portfolio/main.dart';
 import 'package:portfolio/src/components/abooutComponent.dart';
 import 'package:portfolio/src/components/contactComponent.dart';
 import 'package:portfolio/src/components/footerComponent.dart';
@@ -20,7 +21,7 @@ class HomeView extends StatefulWidget {
 }
 
 class _HomeViewState extends State<HomeView> {
-  final controller = HomeController();
+  final controller = getIt.get<HomeController>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -21,7 +21,7 @@ class _CustomButtomState extends State<CustomButtom> {
   Widget build(BuildContext context) {
     return HoverWidget(
       hoverChild: TextButton(
-        onPressed: () {},
+        onPressed: widget.onPressed,
         style: TextButton.styleFrom(padding: const EdgeInsets.all(0)),
         child: Material(
           color: Colors.transparent,

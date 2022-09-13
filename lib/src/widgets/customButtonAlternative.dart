@@ -22,7 +22,7 @@ class _CustomButtomAlternativeState extends State<CustomButtomAlternative> {
   Widget build(BuildContext context) {
     return HoverWidget(
       hoverChild: TextButton(
-        onPressed: () {},
+        onPressed: widget.onPressed,
         style: TextButton.styleFrom(padding: const EdgeInsets.all(0)),
         child: Material(
           color: Colors.transparent,

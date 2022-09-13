@@ -8,9 +8,12 @@ import 'package:portfolio/src/styles/portfolioColors.dart';
 
 class NavItem extends StatefulWidget {
   final String text;
-  final ScrollController controller;
-  const NavItem({Key? key, required this.text, required this.controller})
-      : super(key: key);
+  final VoidCallback onPressed;
+  const NavItem({
+    Key? key,
+    required this.text,
+    required this.onPressed,
+  }) : super(key: key);
 
   @override
   State<NavItem> createState() => _NavItemState();
@@ -21,7 +24,7 @@ class _NavItemState extends State<NavItem> {
   Widget build(BuildContext context) {
     return HoverWidget(
       hoverChild: TextButton(
-        onPressed: () {},
+        onPressed: widget.onPressed,
         child: Text(
           widget.text,
           style: GoogleFonts.montserrat(

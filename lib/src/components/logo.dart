@@ -7,7 +7,9 @@ import 'package:hovering/hovering.dart';
 import 'package:portfolio/src/styles/portfolioColors.dart';
 
 class Logo extends StatefulWidget {
-  Logo({Key? key}) : super(key: key);
+  Logo({
+    Key? key,
+  }) : super(key: key);
 
   @override
   State<Logo> createState() => _LogoState();
@@ -28,9 +30,9 @@ class _LogoState extends State<Logo> {
                 fontSize: 22,
               ),
             ),
-            const Text(
+            Text(
               "/",
-              style: TextStyle(
+              style: GoogleFonts.montserrat(
                 fontWeight: FontWeight.bold,
                 fontSize: 22,
               ),
@@ -42,7 +44,10 @@ class _LogoState extends State<Logo> {
                   'Marcelo Henrique',
                   speed: const Duration(milliseconds: 130),
                   textStyle: GoogleFonts.montserrat(
-                      fontWeight: FontWeight.bold, color: PortfolioColors.red),
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold,
+                    color: PortfolioColors.red,
+                  ),
                 ),
               ],
             ),
@@ -81,7 +86,7 @@ class _LogoState extends State<Logo> {
               ),
               text: "H",
             ),
-            TextSpan(
+            const TextSpan(
               text: ">",
             )
           ],

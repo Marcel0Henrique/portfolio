@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get_it/get_it.dart';
 import 'package:portfolio/src/views/homeView.dart';
+import 'package:scroll_to_id/scroll_to_id.dart';
 
 void main() {
   runApp(const MyApp());

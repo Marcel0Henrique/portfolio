@@ -39,6 +39,8 @@ dependencies:
   lottie: ^1.4.2
   font_awesome_flutter: ^10.2.1
   web_smooth_scroll: ^1.0.0
+  scroll_to_id: ^1.5.1
+  get_it: ^7.2.0
 
 dev_dependencies:
   flutter_test:

@@ -25,6 +25,9 @@ class _NavItemState extends State<NavItem> {
     return HoverWidget(
       hoverChild: TextButton(
         onPressed: widget.onPressed,
+        style: TextButton.styleFrom(
+          padding: const EdgeInsets.all(0),
+        ),
         child: Text(
           widget.text,
           style: GoogleFonts.montserrat(
@@ -37,6 +40,9 @@ class _NavItemState extends State<NavItem> {
       onHover: (event) {},
       child: TextButton(
         onPressed: () {},
+        style: TextButton.styleFrom(
+          padding: const EdgeInsets.all(0),
+        ),
         child: Text(
           widget.text,
           style: GoogleFonts.montserrat(

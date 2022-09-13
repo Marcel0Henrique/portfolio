@@ -6,14 +6,14 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:hovering/hovering.dart';
 import 'package:portfolio/src/styles/portfolioColors.dart';
 
-class LogoAnimation extends StatefulWidget {
-  LogoAnimation({Key? key}) : super(key: key);
+class Logo extends StatefulWidget {
+  Logo({Key? key}) : super(key: key);
 
   @override
-  State<LogoAnimation> createState() => _LogoAnimationState();
+  State<Logo> createState() => _LogoState();
 }
 
-class _LogoAnimationState extends State<LogoAnimation> {
+class _LogoState extends State<Logo> {
   @override
   Widget build(BuildContext context) {
     return HoverWidget(

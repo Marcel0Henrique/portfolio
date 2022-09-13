@@ -8,30 +8,39 @@ import 'package:portfolio/src/styles/portfolioColors.dart';
 
 class NavItem extends StatefulWidget {
   final String text;
-  const NavItem({Key? key, required this.text}) : super(key: key);
+  final ScrollController controller;
+  const NavItem({Key? key, required this.text, required this.controller})
+      : super(key: key);
 
   @override
   State<NavItem> createState() => _NavItemState();
 }
 
-class _NavItemState extends State<NavItem> with TickerProviderStateMixin {
+class _NavItemState extends State<NavItem> {
   @override
   Widget build(BuildContext context) {
     return HoverWidget(
-      hoverChild: Text(
-        widget.text,
-        style: GoogleFonts.montserrat(
-          fontWeight: FontWeight.bold,
-          color: PortfolioColors.red,
-          fontSize: 17,
+      hoverChild: TextButton(
+        onPressed: () {},
+        child: Text(
+          widget.text,
+          style: GoogleFonts.montserrat(
+            color: PortfolioColors.red,
+            fontWeight: FontWeight.bold,
+            fontSize: 17,
+          ),
         ),
       ),
       onHover: (event) {},
-      child: Text(
-        widget.text,
-        style: GoogleFonts.montserrat(
-          fontWeight: FontWeight.bold,
-          fontSize: 17,
+      child: TextButton(
+        onPressed: () {},
+        child: Text(
+          widget.text,
+          style: GoogleFonts.montserrat(
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+            fontSize: 17,
+          ),
         ),
       ),
     );

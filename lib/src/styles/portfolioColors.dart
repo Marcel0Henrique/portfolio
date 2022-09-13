@@ -8,4 +8,8 @@ class PortfolioColors {
   static Color purpleSix = const Color(0xff0d053a);
 
   static Color red = const Color(0xfffe3e57);
+  static List<Color> gradient = [
+    Color.fromARGB(255, 18, 9, 89),
+    const Color(0xff0c082e),
+  ];
 }

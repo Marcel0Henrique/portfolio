@@ -109,13 +109,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "10.2.1"
-  get_it:
-    dependency: "direct main"
-    description:
-      name: get_it
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "7.2.0"
   google_fonts:
     dependency: "direct main"
     description:
@@ -324,13 +317,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.2"
-  web_smooth_scroll:
-    dependency: "direct main"
-    description:
-      name: web_smooth_scroll
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.0.0"
   win32:
     dependency: transitive
     description:

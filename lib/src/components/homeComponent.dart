@@ -2,7 +2,9 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
+import 'package:portfolio/src/controllers/homeController.dart';
 import 'package:portfolio/src/styles/portfolioColors.dart';
+import 'package:portfolio/src/widgets/customButton.dart';
 
 class HomeComponent extends StatelessWidget {
   const HomeComponent({Key? key}) : super(key: key);
@@ -101,6 +103,17 @@ class HomeComponent extends StatelessWidget {
                     )
                   ],
                 ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 40),
+                  child: Row(
+                    children: [
+                      CustomButtom(
+                        text: "Sobre mim",
+                        onPressed: () {},
+                      ),
+                    ],
+                  ),
+                )
               ],
             ),
             const Expanded(

@@ -12,4 +12,14 @@ class PortfolioColors {
     Color.fromARGB(255, 18, 9, 89),
     const Color(0xff0c082e),
   ];
+
+  static List<Color> buttomGradient = [
+    const Color(0xfffe3e57),
+    const Color.fromARGB(255, 246, 13, 44),
+  ];
+
+  static List<Color> buttomHoverGradient = [
+    Color.fromARGB(255, 254, 43, 71),
+    Color.fromARGB(255, 251, 3, 36),
+  ];
 }

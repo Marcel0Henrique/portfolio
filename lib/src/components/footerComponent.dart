@@ -59,7 +59,7 @@ class FooterComponent extends StatelessWidget {
                 ),
               ),
               Text(
-                "© 2020 Marcelo Henrique",
+                "© 2022 Marcelo Henrique",
                 style: GoogleFonts.montserrat(
                   fontWeight: FontWeight.bold,
                   color: PortfolioColors.red,

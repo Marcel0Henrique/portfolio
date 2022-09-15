@@ -121,6 +121,8 @@ class _HomeViewState extends State<HomeView> {
                   icon: FontAwesomeIcons.instagram,
                   link: "https://www.instagram.com/marcel0__henrique/",
                 ),
+                SocialItem(
+                    icon: FontAwesomeIcons.envelope, link: "www.google.com.br"),
                 Container(
                   height: 140,
                   width: 3,

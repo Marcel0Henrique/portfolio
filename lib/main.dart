@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 import 'package:portfolio/src/controllers/homeController.dart';
@@ -7,7 +9,8 @@ import 'package:portfolio/src/views/homeView.dart';
 
 final getIt = GetIt.instance;
 void main() async {
-  final teste = ApiGitHub();
+  final github = ApiGitHub().getData();
+  print(github.toString());
   getIt.registerSingleton<HomeController>(HomeController());
   getIt.registerSingleton<GitHubModel>(GitHubModel());
 

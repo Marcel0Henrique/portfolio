@@ -28,6 +28,7 @@ class _LogoState extends State<Logo> {
               style: GoogleFonts.montserrat(
                 fontWeight: FontWeight.bold,
                 fontSize: 22,
+                color: Colors.white,
               ),
             ),
             Text(
@@ -35,6 +36,7 @@ class _LogoState extends State<Logo> {
               style: GoogleFonts.montserrat(
                 fontWeight: FontWeight.bold,
                 fontSize: 22,
+                color: Colors.white,
               ),
             ),
             AnimatedTextKit(
@@ -71,7 +73,9 @@ class _LogoState extends State<Logo> {
             fontSize: 22,
           ),
           children: [
-            const TextSpan(text: "</"),
+            const TextSpan(
+              text: "</",
+            ),
             TextSpan(
               style: GoogleFonts.montserrat(
                 color: PortfolioColors.red,

@@ -39,7 +39,7 @@ class HomeComponent extends StatelessWidget {
                   style: GoogleFonts.montserrat(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
-                    fontSize: 26,
+                    fontSize: MediaQuery.of(context).size.height * 0.04,
                   ),
                 ),
                 RichText(
@@ -53,7 +53,7 @@ class HomeComponent extends StatelessWidget {
                       TextSpan(
                         text: "Meu nome é ",
                         style: GoogleFonts.montserrat(
-                          fontSize: 42,
+                          fontSize: MediaQuery.of(context).size.height * 0.06,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -61,7 +61,7 @@ class HomeComponent extends StatelessWidget {
                         style: GoogleFonts.montserrat(
                           color: PortfolioColors.red,
                           fontWeight: FontWeight.bold,
-                          fontSize: 42,
+                          fontSize: MediaQuery.of(context).size.height * 0.06,
                         ),
                         text: "Marcelo Henrique",
                       ),
@@ -75,14 +75,14 @@ class HomeComponent extends StatelessWidget {
                       style: GoogleFonts.montserrat(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
-                        fontSize: 32,
+                        fontSize: MediaQuery.of(context).size.height * 0.05,
                       ),
                     ),
                     DefaultTextStyle(
                       style: GoogleFonts.montserrat(
                         fontWeight: FontWeight.bold,
                         color: PortfolioColors.red,
-                        fontSize: 32,
+                        fontSize: MediaQuery.of(context).size.height * 0.05,
                       ),
                       child: AnimatedTextKit(
                         repeatForever: true,
@@ -128,9 +128,9 @@ class HomeComponent extends StatelessWidget {
               child: SizedBox(),
             ),
             Lottie.asset(
-              height: 550,
-              width: 550,
               reverse: true,
+              height: MediaQuery.of(context).size.height * 0.5,
+              width: MediaQuery.of(context).size.width * 0.4,
               'assets/animations/personInComputer.json',
             )
           ],
